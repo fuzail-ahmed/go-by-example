@@ -14,11 +14,11 @@ func arrPush(n int, arr []interface{}) []interface{} {
 	} else {
 		newArr = append(arr, newNumber)
 	}
+
 	if len(arr) == n {
 		return arr
-	} else {
-		return arrPush(n, newArr)
 	}
+	return arrPush(n, newArr)
 }
 
 func main() {
